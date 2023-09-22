@@ -48,7 +48,8 @@ Design the login page, content page, and recipe posting page.
 
 
 - **Login:** Develop a secure login system to authenticate users, storing their credentials securely in the database.
-Choice Display: Create JavaScript code to fetch and display gluten-free content from the database, categorized by topics or categories.
+
+- **Choice Display:** Create JavaScript code to fetch and display gluten-free content from the database, categorized by topics or categories.
 
 - **Favorites:** Allow users to add and remove gluten-free content items from their favorites list. Update the user's favorites in real-time.
 
@@ -59,7 +60,8 @@ Choice Display: Create JavaScript code to fetch and display gluten-free content 
 
 ### Service (Backend): 
 
-- Create a backend service using technologies like Node.js and Express.js 
+- Create a backend service using technologies like Node.js and Express.js
+
 - **Set up endpoints for the following functionalities:**
    - User registration and login to securely store user credentials in the database.
    - Managing users' favorite content items and updating the database accordingly.
