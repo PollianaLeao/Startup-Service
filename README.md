@@ -54,7 +54,7 @@ Choice Display: Create JavaScript code to fetch and display gluten-free content 
 
 - **Review Stars:** Implement review stars for each content item, enabling users to rate the content by assigning a certain number of stars.
 
-**Recipe Posting:** Add JavaScript logic to allow users to submit gluten-free recipes, which are then stored in the database.
+- **Recipe Posting:** Add JavaScript logic to allow users to submit gluten-free recipes, which are then stored in the database.
 
 
 ### Service (Backend): 
