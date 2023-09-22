@@ -11,13 +11,19 @@ Hello, gluten-free world! Welcome to Polly by Polly, a one-stop destination for 
 
 ## Key features: 🔑
 
-**Login:** Segure login over HTTPS.
-**Category Picker:** Allow users to choose from different topics or categories related to gluten-free living. These could include "Gluten-Free Recipes" and "Gluten-Free Products".
-**Favorits:** Allow users to favorite or bookmark their top gluten-free content items for easy access. Provide an interface for users to add or remove from their favorites. Add a favorite bookmark for acessing their saves.
-**Rate Your Plate:** Create a review start for each recipe.
-**What is popular:** Show the number of favorites the content has or comments on recipes, updating dynamically.
-**WebSockets:** Provide real-time updates for new content, comments. For instance, notify users of new recipes or comments as they are posted.
-**Share your secret:** Ability to upload recipes.
+- **Login:** Segure login over HTTPS.
+
+- **Category Picker:** Allow users to choose from different topics or categories related to gluten-free living. These could include "Gluten-Free Recipes" and "Gluten-Free Products".
+
+- **Favorits:** Allow users to favorite or bookmark their top gluten-free content items for easy access. Provide an interface for users to add or remove from their favorites. Add a favorite bookmark for acessing their saves.
+
+- **Rate Your Plate:** Create a review start for each recipe.
+
+- **What is popular:** Show the number of favorites the content has or comments on recipes, updating dynamically.
+
+- **WebSockets:** Provide real-time updates for new content, comments. For instance, notify users of new recipes or comments as they are posted.
+
+- **Share your secret:** Ability to upload recipes.
 
 
 ## Technologies 💻:
