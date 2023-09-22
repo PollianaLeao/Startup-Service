@@ -15,7 +15,7 @@ Hello, gluten-free world! Welcome to Polly by Polly, a one-stop destination for 
 
 - **Category Picker:** Allow users to choose from different topics or categories related to gluten-free living. These could include "Gluten-Free Recipes" and "Gluten-Free Products".
 
-- **Favorits:** Allow users to favorite or bookmark their top gluten-free content items for easy access. Provide an interface for users to add or remove from their favorites. Add a favorite bookmark for acessing their saves.
+- **Favorites:** Allow users to favorite or bookmark their top gluten-free content items for easy access. Provide an interface for users to add or remove from their favorites. Add a favorite bookmark for acessing their saves.
 
 - **Rate Your Plate:** Create a review start for each recipe.
 
