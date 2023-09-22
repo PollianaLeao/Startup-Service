@@ -88,3 +88,6 @@ Choice Display: Create JavaScript code to fetch and display gluten-free content 
 
 
 ## Design: 🎨
+
+![Untitled_Artwork 2](https://github.com/PollianaLeao/Startup/assets/144174845/6ddb9dc7-c11f-4d0b-950d-cd024c5ca68f)
+![Untitled_Artwork](https://github.com/PollianaLeao/Startup/assets/144174845/17fe75c8-adf9-46b2-8918-40b8b13b6bf2)
