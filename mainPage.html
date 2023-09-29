@@ -13,22 +13,100 @@
         </ul>
     </nav>
     <header>
-        <h1>Polly by Polly: Your Gluten-Free Kitchen</h1>
+        <h1>Welcome to Polly by Polly: Your Gluten-Free Kitchen</h1>
     </header>
     <main>
         <h2>Gluten-Free Recipes</h2>
         <ul>
             <li>
-                <h3>Recipe</h3>
+                <h3>Recipe 1</h3>
                 <p>This is the description of Recipe 1.</p>
+                <!-- Add Rate Your Plate (Review Stars) -->
+                <div class="rate-your-plate">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <!-- Add a button to add to Favorites -->
+                <button class="add-favorite">Add to Favorites</button>
             </li>
             <li>
-                <h3>Recipe</h3>
+                <h3>Recipe 2</h3>
                 <p>This is the description of Recipe 2.</p>
+                <!-- Add Rate Your Plate (Review Stars) -->
+                <div class="rate-your-plate">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <!-- Add a button to add to Favorites -->
+                <button class="add-favorite">Add to Favorites</button>
             </li>
             <!-- Add more recipes as needed -->
         </ul>
     </main>
+    <aside>
+        <!-- Category Picker -->
+        <div class="category-picker">
+            <label for="category">Choose a category:</label>
+            <select id="category" name="category">
+                <option value="recipes">Gluten-Free Recipes</option>
+                <option value="products">Gluten-Free Products</option>
+            </select>
+        </div>
+
+        <!-- Favorites -->
+        <div class="favorites">
+            <h3>Favorites</h3>
+            <ul>
+                <!-- List of favorite items (can be dynamically generated) -->
+                <li><a href="#">Favorite Recipe 1</a> <button class="remove-favorite">Remove</button></li>
+                <li><a href="#">Favorite Recipe 2</a> <button class="remove-favorite">Remove</button></li>
+            </ul>
+        </div>
+
+        <!-- What is Popular -->
+        <div class="popular-content">
+            <h3>What's Popular</h3>
+            <p>Recipe 1 has <span class="favorites-count">5</span> favorites.</p>
+            <p>Recipe 2 has <span class="favorites-count">8</span> favorites.</p>
+            <!-- Add more popular content entries -->
+        </div>
+
+        <!-- Real-Time Updates (WebSockets) -->
+        <div class="real-time-updates">
+            <h3>Real-Time Updates</h3>
+            <div class="update-list">
+                <p><strong>New Recipe:</strong> Check out our latest gluten-free recipe!</p>
+                <p><strong>New Comment:</strong> Someone just commented on a recipe.</p>
+                <!-- Use JavaScript and WebSockets to update this list in real-time -->
+            </div>
+        </div>
+
+        <!-- Share Your Secret (Upload Recipes) -->
+        <div class="share-your-secret">
+            <h3>Share Your Secret</h3>
+            <form action="upload_recipe.php" method="post" enctype="multipart/form-data">
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" name="recipe-name" required>
+                <br>
+                <label for="recipe-image">Recipe Image:</label>
+                <input type="file" id="recipe-image" name="recipe-image" accept="image/*" required>
+                <br>
+                <label for="recipe-description">Recipe Description:</label>
+                <textarea id="recipe-description" name="recipe-description" required></textarea>
+                <br>
+                <label for="recipe-instructions">Recipe Instructions:</label>
+                <textarea id="recipe-instructions" name="recipe-instructions" required></textarea>
+                <br>
+                <input type="submit" value="Upload Recipe">
+            </form>
+        </div>
+    </aside>
     <footer>
         <p>&copy; 2023 Gluten-Free Recipes</p>
     </footer>
