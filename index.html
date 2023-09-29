@@ -1,5 +1,29 @@
-!DOCTYPE <html>
-    <body>
-        <h1>Hello CS260!</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gluten-Free Recipe Website - Login</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- link to a CSS file for styling later -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to Gluten-Free Recipes</h1>
+    </header>
+    <main>
+        <h2>Login</h2>
+        <form action="content.html" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </main>
+    <footer>
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </footer>
+</body>
 </html>
