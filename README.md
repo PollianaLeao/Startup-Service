@@ -42,7 +42,7 @@ I have included hyperlinks to navigate between the login page and the content pa
 
 I have organized content on both pages using HTML elements like headings (<h1>, <h2>), lists (<ul>, <li>), and paragraphs (<p>).
 
-I have included placeholder image elements in the code, but I will need to replace the placeholder image sources (src attributes) with actual image URLs when I have them.
+I have included placeholder image elements in the code, but I will need to replace the placeholder image sources (src attributes) with actual image URLs when I have them. 
 
 ```
 
