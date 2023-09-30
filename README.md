@@ -13,7 +13,7 @@ Hello, gluten-free world! Welcome to Polly by Polly, a one-stop destination for 
 
 - **Login:** Segure login over HTTPS.
 
-- **Category Picker:** Allow users to choose from different topics or categories related to gluten-free living. These could include "Gluten-Free Recipes" and "Gluten-Free Products".
+- **Category Picker:** Allow users to choose from different topics or categories related to gluten-free living. These could include "Gluten-Free Recipes".
 
 - **Favorites:** Allow users to favorite or bookmark their top gluten-free content items for easy access. Provide an interface for users to add or remove from their favorites. Add a favorite bookmark for acessing their saves.
 
@@ -35,6 +35,18 @@ I am going to use the required technologies in the following ways.
 - Create HTML pages, including a login page and a page for accessing gluten-free content. 
 Include hyperlinks to navigate between the login page and the content page.
 Organize content using HTML elements like headings, lists, and paragraphs.
+```
+I have created HTML pages. I have an "index.html" page for the login, which includes a form with fields for username and password, an "signup.html" page for signing up and an "mainPage.html" page for accessing the gluten-free content and others.
+
+I have included hyperlinks to navigate between the login page and the content page. In the "index.html" footer, there is a "Sign up here" link, and in the "mainPage.html" navigation bar, there is a "Logout" link.
+
+I have organized content on both pages using HTML elements like headings (<h1>, <h2>), lists (<ul>, <li>), and paragraphs (<p>).
+
+I have included placeholder image elements in the code, but I will would need to replace the placeholder image sources (src attributes) with actual image URLs when I have them.
+
+```
+
+
 
 
 ### CSS:
