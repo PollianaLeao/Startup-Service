@@ -36,9 +36,9 @@ I am going to use the required technologies in the following ways.
 Include hyperlinks to navigate between the login page and the content page.
 Organize content using HTML elements like headings, lists, and paragraphs.
 ```
-I have created HTML pages. I have an "index.html" page for the login, which includes a form with fields for username and password, an "signup.html" page for signing up and an "mainPage.html" page for accessing the gluten-free content and others.
+I have created HTML pages. I have an "index.html" page for the login, which includes a placeholder form with fields for username and password, an "signup.html" page for signing up and an "mainPage.html" page for accessing the gluten-free content and others.
 
-I have included hyperlinks to navigate between the login page and the content page. In the "index.html" footer, there is a "Sign up here" link, and in the "mainPage.html" navigation bar, there is a "Logout" link.
+I have included hyperlinks to navigate between the login page and the content page. In the "index.html" footer, there is a "Sign up here" link, and in the "mainPage.html" navigation bar, there is a "Logout" link. 
 
 I have organized content on both pages using HTML elements like headings (<h1>, <h2>), lists (<ul>, <li>), and paragraphs (<p>).
 
