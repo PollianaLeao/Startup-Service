@@ -1,19 +1,24 @@
 /* Reset some default styles for browsers */
-body, h1, h2, p {
+body, h1, h2, p, ul, ol, li, input, textarea, button {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #e85b33;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 main {
@@ -22,6 +27,7 @@ main {
     padding: 20px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 form {
@@ -35,19 +41,20 @@ label {
 
 h2 {
     text-align: center;
+    font-size: 1.5em;
+    margin: 20px 0;
 }
 
-/* Set a consistent width and margin for text input fields */
+/* Text Input Fields and Text Areas */
 input[type="text"],
 input[type="password"],
 input[type="email"],
 textarea {
     width: 100%;
-    max-width: 400px; /* Set a fixed maximum width for input fields */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 5px 0; /* Add spacing */
+    margin: 10px 0;
 }
 
 input[type="submit"] {
@@ -57,11 +64,16 @@ input[type="submit"] {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     color: #666;
 }
 
@@ -76,45 +88,55 @@ a:hover {
 
 /* Styles for Favorites */
 .favorites {
-    margin-top: 20px;
-    padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .favorites h3 {
     color: #e85b33;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 /* Styles for Most Popular Recipes */
 .popular-content {
-    margin-top: 20px;
-    padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .popular-content h3 {
     color: #e85b33;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.popular-content li {
+    margin-bottom: 20px;
 }
 
 /* Styles for Real-Time Updates */
 .real-time-updates {
-    margin-top: 20px;
-    padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .real-time-updates h3 {
     color: #e85b33;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
-.update-list {
-    margin-top: 10px;
+.update-list p {
+    margin-bottom: 10px;
 }
 
 /* Styles for Recipe Images */
@@ -130,13 +152,14 @@ img {
     background-color: #e85b33;
     color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .popularity {
     color: #e85b33;
     font-weight: bold;
 }
+
