@@ -51,6 +51,7 @@ input[type="password"],
 input[type="email"],
 textarea {
     width: 100%;
+    max-width: 400px; /* Limit the maximum width */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -162,4 +163,3 @@ img {
     color: #e85b33;
     font-weight: bold;
 }
-
