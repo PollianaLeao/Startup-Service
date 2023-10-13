@@ -40,6 +40,9 @@ input[type="email"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    /* Adjust the width and padding to make the input elements shorter */
+    width: calc(100% - 30px); /* Reduce the width by 30px */
+    padding: 10px 15px; /* Maintain padding on the top and bottom and reduce side padding */
 }
 
 input[type="submit"] {
