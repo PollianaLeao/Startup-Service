@@ -29,6 +29,9 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
+nav ul li {
+    list-style-type: none;
+}
 
 form {
     display: grid;
@@ -102,6 +105,19 @@ a:hover {
     margin-bottom: 10px;
 }
 
+/* Adjust margin or padding for the "Remove" buttons */
+.remove-favorite {
+    margin-right: 15px; /* Add right margin to create space between buttons */
+    background-color: #e85b33;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
 /* Styles for Most Popular Recipes */
 .popular-content {
     background-color: #f9f9f9;
@@ -156,3 +172,4 @@ img {
     padding: 10px 20px;
     border-radius: 5px;
    
+}
