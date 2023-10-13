@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     line-height: 1.6;
-    margin: 0;
+    margin: 20px; /* Add margin to the body */
     padding: 0;
 }
 
@@ -18,12 +18,12 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px; /* Add margin to the header */
 }
 
 main {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto 20px; /* Add margin to the main content area */
     padding: 20px;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -51,7 +51,7 @@ input[type="password"],
 input[type="email"],
 textarea {
     width: 100%;
-    max-width: 400px; /* Limit the maximum width */
+    max-width: 400px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -93,7 +93,7 @@ a:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    margin-top: 20px;
+    margin: 0 auto 20px; /* Add margin to the favorites section */
 }
 
 .favorites h3 {
@@ -108,7 +108,7 @@ a:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    margin-top: 20px;
+    margin: 0 auto 20px; /* Add margin to the popular content section */
 }
 
 .popular-content h3 {
@@ -127,7 +127,7 @@ a:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    margin-top: 20px;
+    margin: 0 auto 20px; /* Add margin to the real-time updates section */
 }
 
 .real-time-updates h3 {
@@ -155,11 +155,4 @@ img {
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-.popularity {
-    color: #e85b33;
-    font-weight: bold;
-}
+   
