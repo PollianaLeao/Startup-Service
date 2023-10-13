@@ -33,16 +33,27 @@ label {
     font-weight: bold;
 }
 
+h2 {
+    text-align: center;
+}
+
+/* Adjust margin for text input fields */
 input[type="text"],
 input[type="password"],
 input[type="email"] {
+    margin: 5px 0;
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    /* Adjust the width and padding to make the input elements shorter */
-    width: calc(100% - 30px); /* Reduce the width by 30px */
-    padding: 10px 15px; /* Maintain padding on the top and bottom and reduce side padding */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
 }
 
 input[type="submit"] {
@@ -67,4 +78,71 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Styles for Favorites */
+.favorites {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.favorites h3 {
+    color: #e85b33;
+}
+
+/* Styles for Most Popular Recipes */
+.popular-content {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.popular-content h3 {
+    color: #e85b33;
+}
+
+/* Styles for Real-Time Updates */
+.real-time-updates {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.real-time-updates h3 {
+    color: #e85b33;
+}
+
+.update-list {
+    margin-top: 10px;
+}
+
+/* Styles for Recipe Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Additional styles for consistency */
+.add-favorite, .remove-favorite {
+    background-color: #e85b33;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.popularity {
+    color: #e85b33;
+    font-weight: bold;
 }
