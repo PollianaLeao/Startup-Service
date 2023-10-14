@@ -33,6 +33,41 @@ nav ul li {
     list-style-type: none;
 }
 
+/* Styles for Navigation */
+nav {
+    background-color: #333; /* Dark background color for the navigation bar */
+    padding: 10px 0; /* Add some padding for better spacing */
+}
+
+nav ul {
+    list-style: none; /* Remove list bullets */
+    text-align: center; /* Center-align the list items */
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add right margin for spacing between items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px; /* Add padding to make the links clickable */
+    border: 1px solid #e85b33; /* Add a border for button-like appearance */
+    border-radius: 5px; /* Rounded corners for the links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+
+    /* Hover effect */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e85b33; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+
 form {
     display: grid;
     grid-gap: 20px;
@@ -172,4 +207,23 @@ img {
     padding: 10px 20px;
     border-radius: 5px;
    
+}
+/* Media Query for Smaller Screens (e.g., Smartphones) */
+@media (max-width: 767px) {
+    header {
+        font-size: 1.2em;
+    }
+    main {
+        max-width: 100%;
+    }
+}
+
+/* Media Query for Larger Screens (e.g., Tablets and Desktops) */
+@media (min-width: 768px) {
+    header {
+        font-size: 1.5em;
+    }
+    main {
+        max-width: 800px;
+    }
 }
