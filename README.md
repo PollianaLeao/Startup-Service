@@ -55,7 +55,7 @@ I have included placeholder image elements in the code, but I will need to repla
 Focus on whitespace, color choices, and contrast for readability.
 Design the login page, content page, and recipe posting page.
 ```
-I have tried to make it visually appeling and keep considtency. I design the login page and the sign up page as well as the content page. Did not create a seperate page for recipes, but left in the main content page an example.
+I have tried to make it visually appeling and keep consistency. I design the login page and the sign up page as well as the content page. Did not create a seperate page for recipes, but left in the main content page as an example.
 
 Break down of the code:
 Reset Default Styles: It removes margins, padding, and borders.
