@@ -54,6 +54,42 @@ I have included placeholder image elements in the code, but I will need to repla
 - Have a visually appealing and responsive design, as well as to maintain consistency.
 Focus on whitespace, color choices, and contrast for readability.
 Design the login page, content page, and recipe posting page.
+```
+I have tried to make it visually appeling and keep considtency. I design the login page and the sign up page as well as the content page. Did not create a seperate page for recipes, but left in the main content page an example.
+
+Break down of the code:
+Reset Default Styles: It removes margins, padding, and borders.
+
+Body Styles: Sets the background color, font, line height, and margin for the entire page.
+
+Header Styles: It includes background color, text color, alignment, padding, and margin.
+
+Main Content Styles: It includes maximum width, background color, padding, box shadow, and border radius.
+
+Navigation Styles: It includes background color, padding, and styles for the navigation links.
+
+Button Styles: It includes background color, text color, padding, border radius, and hover effects.
+
+Form Styles: It includes grid layout and label styles.
+
+Input and Textarea Styles: It input fields and text areas, setting width, padding, border, and margin.
+
+Footer Styles: It includes text alignment, margin, padding, background color, and border.
+
+Link Styles: Adds hyperlinks and their hover states.
+
+Favorites Section Styles: It includes background color, border, border radius, padding, and margin.
+
+Remove Favorite Button Styles: A class of "remove-favorite."
+
+Popular Content Styles: It includes background color, border, border radius, padding, and margin.
+
+Real-Time Updates Styles: It includes background color, border, border radius, padding, and margin.
+
+Recipe Image Styles: It sets maximum width, height, border, border radius, and hover effects.
+
+Media Queries: Adjusts some styles for smaller and larger screens using media queries. For smaller screens, it adjusts the font size in the header and makes the main content area full width. For larger screens, it sets a maximum width for the main content area
+```
 
 
 ### JavaScript:
