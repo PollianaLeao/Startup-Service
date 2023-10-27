@@ -3,27 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Gluten-Free Kicthen- Login</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- link to a CSS file for styling later -->
+    <title>Your Gluten-Free Kitchen- Login</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Polly by Polly: Your Gluten-Free Kicthen</h1>
+        <h1>Welcome to Polly by Polly: Your Gluten-Free Kitchen</h1>
     </header>
     <main>
         <h2>Login</h2>
-        <form action="content.html" method="post">
+        <form id="login-form">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             <br>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
             <br>
-            <input type="submit" value="Login">
+            <button type="submit">Login</button>
         </form>
+        <div id="message"></div>
     </main>
     <footer>
         <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
     </footer>
+    <script>
+        const loginForm = document.getElementById('login-form');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const message = document.getElementById('message');
+
+        loginForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const username = usernameInput.value;
+            const password = passwordInput.value;
+
+            try {
+                const response = await fetch('/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ username, password }),
+                });
+
+                const data = await response.json();
+
+                if (response.status === 200) {
+                    // Authentication successful, store the token (data.token) and redirect to the user's dashboard.
+                    localStorage.setItem('token', data.token);
+                    window.location.href = '/dashboard.html'; // Replace with your dashboard URL.
+                } else {
+                    message.textContent = 'Login failed. Please check your credentials.';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
 </body>
 </html>
