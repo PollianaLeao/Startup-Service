@@ -12,7 +12,7 @@
     </header>
     <main>
         <h2>Sign Up</h2>
-        <form action="signup_process.php" method="post">
+        <form id="signup-form" action="signup_process.php" method="post">
             <label for="fullname">Full Name:</label>
             <input type="text" id="fullname" name="fullname" required>
             <br>
@@ -21,9 +21,13 @@
             <br>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
-            <br>
+            <span id="username-error" class="error"></span><br>
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
+            <span id="password-error" class="error"></span><br>
+            <div id="password-strength-meter">
+                Password Strength: <span id="password-strength">Weak</span>
+            </div>
             <br>
             <input type="submit" value="Sign Up">
         </form>
@@ -31,5 +35,59 @@
     <footer>
         <p>Already have an account? <a href="index.html">Log in here</a></p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+    <script>
+        const signupForm = document.getElementById('signup-form');
+        const fullnameInput = document.getElementById('fullname');
+        const emailInput = document.getElementById('email');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const passwordStrength = document.getElementById('password-strength');
+
+        signupForm.addEventListener('submit', (event) => {
+            let valid = true;
+
+            if (fullnameInput.value.trim() === '') {
+                document.getElementById('fullname-error').textContent = 'Full Name is required';
+                valid = false;
+            } else {
+                document.getElementById('fullname-error').textContent = '';
+            }
+
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (!emailPattern.test(emailInput.value)) {
+                document.getElementById('email-error').textContent = 'Invalid email format';
+                valid = false;
+            } else {
+                document.getElementById('email-error').textContent = '';
+            }
+
+            if (usernameInput.value.trim() === '') {
+                document.getElementById('username-error').textContent = 'Username is required';
+                valid = false;
+            } else {
+                document.getElementById('username-error').textContent = '';
+            }
+
+            if (passwordInput.value.trim() === '') {
+                document.getElementById('password-error').textContent = 'Password is required';
+                valid = false;
+            } else {
+                document.getElementById('password-error').textContent = '';
+            }
+
+            // Check password strength
+            const passwordStrengthResult = zxcvbn(passwordInput.value);
+            passwordStrength.textContent = passwordStrengthResult.score >= 3 ? 'Strong' : 'Weak';
+
+            if (passwordStrengthResult.score < 3) {
+                valid = false;
+            }
+
+            if (!valid) {
+                event.preventDefault(); // Prevent form submission if there are validation errors
+            }
+        });
+    </script>
 </body>
 </html>
