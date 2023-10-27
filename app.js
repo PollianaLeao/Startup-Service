@@ -49,3 +49,48 @@ app.post('/login', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+const socket = new WebSocket('ws://your-server-url');
+
+socket.addEventListener('open', (event) => {
+    console.log('WebSocket connection opened');
+});
+
+socket.addEventListener('message', (event) => {
+    const data = JSON.parse(event.data);
+    // Handle incoming real-time updates (e.g., add new recipes or comments)
+    // You can dynamically update the content based on the received data
+});
+
+socket.addEventListener('close', (event) => {
+    console.log('WebSocket connection closed');
+});
+
+// In your server code
+socket.on('newRecipe', (data) => {
+    // Send the new recipe data to all connected clients
+    socket.emit('newRecipe', data);
+});
+
+// Get the registration form element by its ID
+const registrationForm = document.getElementById("registration-form");
+
+// Add a submit event listener to the form
+registrationForm.addEventListener("submit", (event) => {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Get form input values
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    // Perform data validation
+    if (username.trim() === "" || password.trim() === "") {
+        // Display an error message if any field is empty
+        const errorDiv = document.getElementById("error-message");
+        errorDiv.textContent = "Username and password are required.";
+    } else {
+        // If validation passes, you can submit the form or make an API request here
+        // For form submission, you can use registrationForm.submit()
+        // For API requests, use fetch or XMLHttpRequest to post the data to your server.
+    }
+});
