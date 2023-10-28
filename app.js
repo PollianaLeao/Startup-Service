@@ -60,7 +60,7 @@ socket.addEventListener('open', (event) => {
 socket.addEventListener('message', (event) => {
     const data = JSON.parse(event.data);
     // Handle incoming real-time updates (e.g., add new recipes or comments)
-    // You can dynamically update the content based on the received data
+    // dynamically update the content based on the received data
 });
 
 socket.addEventListener('close', (event) => {

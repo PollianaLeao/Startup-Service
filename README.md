@@ -105,6 +105,9 @@ Media Queries: Adjusts some styles for smaller and larger screens using media qu
 
 - **Recipe Posting:** Add JavaScript logic to allow users to submit gluten-free recipes, which are then stored in the database.
 
+```
+I have included user registration, login, content fetching, and interaction logic. Includes user authentication with JWT tokens, which is relevant for login functionality. However, there are some improvements with token handling that need to be addressed still. I have attempt to use localStorage to simulate database data storage for user favorites. Includes WebSocket-related code.
+
 
 ### Service (Backend): 
 

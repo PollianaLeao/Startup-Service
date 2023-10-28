@@ -35,7 +35,7 @@ fetch(apiUrl)
                 const descriptionElement = document.createElement("p");
                 descriptionElement.textContent = contentItem.description;
 
-                // You can create more elements to display additional content details
+                // create more elements to display additional content details
 
                 contentItemDiv.appendChild(titleElement);
                 contentItemDiv.appendChild(descriptionElement);
@@ -59,3 +59,52 @@ fetch(apiUrl)
 
     // To retrieve user favorites
     const favorites = JSON.parse(localStorage.getItem('userFavorites'));
+
+// Add a click event listener to the stars
+const stars = document.querySelectorAll('.star');
+stars.forEach(star => {
+    star.addEventListener('click', handleRating);
+});
+
+function handleRating(event) {
+    const selectedRating = parseInt(event.target.getAttribute('data-rating'));
+    
+    // Send the rating to the server// Add a click event listener to the stars
+const stars = document.querySelectorAll('.star');
+stars.forEach(star => {
+    star.addEventListener('click', handleRating);
+});
+
+function handleRating(event) {
+    const selectedRating = parseInt(event.target.getAttribute('data-rating'));
+    
+    // Send the rating to the server (implement this)
+    // use fetch or XMLHttpRequest to post the rating data to your server
+
+    // simulate updating the rating on the client side
+    updateRating(selectedRating);
+}
+
+function updateRating(selectedRating) {
+    const averageRatingSpan = document.querySelector('.average-rating');
+    const currentRating = parseFloat(averageRatingSpan.textContent);
+
+    // Update the average rating (calculate the actual average)
+    const newAverageRating = ((currentRating + selectedRating) / 2).toFixed(1);
+
+    averageRatingSpan.textContent = newAverageRating;
+    // use fetch or XMLHttpRequest to post the rating data to your server
+
+    // For now, simulate updating the rating on the client side
+    updateRating(selectedRating);
+}
+
+function updateRating(selectedRating) {
+    const averageRatingSpan = document.querySelector('.average-rating');
+    const currentRating = parseFloat(averageRatingSpan.textContent);
+
+    // Update the average rating (calculate the actual average)
+    const newAverageRating = ((currentRating + selectedRating) / 2).toFixed(1);
+
+    averageRatingSpan.textContent = newAverageRating;
+}}
