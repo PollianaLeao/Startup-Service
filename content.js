@@ -1,7 +1,7 @@
 const contentContainer = document.getElementById("content-container");
 
 //'your-api-endpoint' with the actual endpoint on your server
-const apiUrl = 'https://pollybypolly.click';
+const apiUrl = 'https://startup.pollybypolly.click';
 
 fetch(apiUrl)
     .then(response => response.json())
@@ -47,3 +47,15 @@ fetch(apiUrl)
     .catch(error => {
         console.error('Error fetching content:', error);
     });
+    
+    const content = document.getElementById("content-container");
+
+    database.content.forEach(contentItem => {
+        // Create DOM elements for contentItem and append to contentContainer
+    });
+    // To save user favorites
+    const favorite = ['Recipe1', 'Recipe2'];
+    localStorage.setItem('userFavorites', JSON.stringify(favorites));
+
+    // To retrieve user favorites
+    const favorites = JSON.parse(localStorage.getItem('userFavorites'));
