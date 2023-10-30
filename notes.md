@@ -14,7 +14,7 @@ In this assigment I learned how to use github and VS code to pull, commit and pu
 
 What does the link element do?
 
-The <link> element in HTML is typically used to link external resources, such as stylesheets or icons, to a web page. It's commonly used to associate a CSS file with an HTML document to style the page.
+The element in HTML is typically used to link external resources, such as stylesheets or icons, to a web page. It's commonly used to associate a CSS file with an HTML document to style the page.
 
 What does a div tag do?
 
