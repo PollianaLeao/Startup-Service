@@ -18,7 +18,7 @@ The element in HTML is typically used to link external resources, such as styles
 
 What does a div tag do?
 
-The <div> tag is a block-level container in HTML used to group and structure content on a web page. It is often used to apply CSS styles, create layout structures, or group related elements together.
+The tag is a block-level container in HTML used to group and structure content on a web page. It is often used to apply CSS styles, create layout structures, or group related elements together.
 
 Difference between #title and .grid selector?
 
@@ -49,11 +49,11 @@ The Document Object Model (DOM) is a programming interface for web documents, al
 
 Default display property of the HTML span element?
 
-The default display property value for an HTML <span> element is typically "inline." This means it will not create a new line and will flow with the surrounding content.
+The default display property value for an HTML span element is typically "inline." This means it will not create a new line and will flow with the surrounding content.
 
 Change all div elements to have a background color of red using CSS?
 
-To set the background color of all <div> elements to red using CSS, you can use:
+To set the background color of all div elements to red using CSS, you can use:
 
 css
 Copy code
@@ -63,13 +63,13 @@ div {
 
 Display an image with a hyperlink in HTML?
 
-You can use an anchor (<a>) element to create a hyperlink, and include an image (<img>) inside it. Here's an example:
+You can use an anchor (a) element to create a hyperlink, and include an image (img) inside it. Here's an example:
 
 html
 Copy code
-<a href="https://example.com">
-  <img src="image.jpg" alt="Description of the image">
-</a>
+a href="https://example.com"
+  img src="image.jpg" alt="Description of the image"
+/a
 Ordering of box layers in the CSS box model?
 
 The layers in the CSS box model, from the inside out, are:
@@ -93,12 +93,12 @@ document.getElementById("byu").style.color = "green";
 
 Opening HTML tags for various elements?
 
-Paragraph: <p>
-Ordered List: <ol>
-Unordered List: <ul>
-Second Level Heading: <h2>
-First Level Heading: <h1>
-Third Level Heading: <h3>
+Paragraph: p
+Ordered List: ol
+Unordered List: ul
+Second Level Heading: h2
+First Level Heading: h1
+Third Level Heading: h3
 
 How to declare the HTML document type?
 
@@ -106,7 +106,7 @@ You declare the document type (DOCTYPE) in HTML5 like this:
 
 html
 Copy code
-<!DOCTYPE html>
+!DOCTYPE html
 
 Valid JavaScript syntax for if, else, for, while, switch statements?
 
@@ -142,11 +142,11 @@ javascript
 Copy code
 obj.newProperty = "new value";
 Tag to include JavaScript in HTML?
-To include JavaScript in HTML, you use the <script> tag. For example:
+To include JavaScript in HTML, you use the script tag. For example:
 
 html
 Copy code
-<script type="text/javascript" src="script.js"></script>
+script type="text/javascript" src="script.js"></ script
 JavaScript to change text from "animal" to "crow"?
 To change the text "animal" to "crow" using JavaScript, you can do:
 
