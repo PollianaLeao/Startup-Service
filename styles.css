@@ -153,20 +153,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Styles for Favorites */
-.favorites {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 0 auto 20px; /* Add margin to the favorites section */
-}
-
-.favorites h3 {
-    color: #e85b33;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
 
 /* Adjust margin or padding for the "Remove" buttons */
 .remove-favorite {
@@ -180,25 +166,6 @@ a:hover {
     margin-top: 20px;
 }
 
-
-/* Styles for Most Popular Recipes */
-.popular-content {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 0 auto 20px; /* Add margin to the popular content section */
-}
-
-.popular-content h3 {
-    color: #e85b33;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.popular-content li {
-    margin-bottom: 20px;
-}
 
 /* Styles for Real-Time Updates */
 .real-time-updates {

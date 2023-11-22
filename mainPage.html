@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Gluten-Free Kitchen - Content</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to a CSS file for styling -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="content.js"></script>
     <script src="main.js"></script>
     <script src="app.js"></script>
@@ -19,76 +19,22 @@
         <h1>Welcome to Polly by Polly: Your Gluten-Free Kitchen</h1>
     </header>
     <main>
-
         <h2>Gluten-Free Recipes</h2>
         <ul>
             <li>
                 <h3>Buffalo Chicken Stuffed Peppers</h3>
-                <!-- Recipe Image Placeholder -->
-                <img src="https://nyssaskitchen.com/wp-content/uploads/2021/05/Buffalo-Chicken-Stuffed-Peppers-15-1365x2048.jpg" alt="Buffalo Chicken Stuffed Peppers" width="300" > 
+                <img src="https://nyssaskitchen.com/wp-content/uploads/2021/05/Buffalo-Chicken-Stuffed-Peppers-15-1365x2048.jpg" alt="Buffalo Chicken Stuffed Peppers" width="300">
                 <p>These buffalo chicken stuffed peppers are an easy, delicious dinner that everyone will love! Made with shredded chicken, spicy buffalo sauce, and topped with a generous drizzle of ranch dressing and fresh herbs. Healthy, flavorful, and easy to make! Whole30, paleo, gluten free, dairy free, and low carb / keto friendly.</p>
-                <!-- Add Rate Your Plate (Review Stars) -->
-                <div class="rate-your-plate">
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9734;</span>
-                    <span class="star">&#9734;</span>
-                </div>
-                <!-- Add a button to add to Favorites -->
-                <button class="add-favorite">Add to Favorites</button>
             </li>
             <li>
                 <h3>Gluten Free Chocolate Chip Cookies</h3>
-                <!-- Recipe Image Placeholder -->
                 <img src="https://joyfoodsunshine.com/wp-content/uploads/2021/03/gluten-free-chocolate-chip-cookies-recipe-2.jpg" alt="Gluten Free Chocolate Chip Cookies" width="300">
-                <p>These gluten free chocolate chip cookies are crispy on the outside, chewy on the inside, buttery and perfectly sweet. These gluten free cookies are easy to make and don’t require chilling! They are the best and no one can even tell they’re gluten-free!  
-
-                </p>
-                <!-- Add Rate Your Plate (Review Stars) -->
-                <div class="rate-your-plate">
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9733;</span>
-                    <span class="star">&#9734;</span>
-                    <span class="star">&#9734;</span>
-                </div>
-                <!-- Add a button to add to Favorites -->
-                <button class="add-favorite">Add to Favorites</button>
+                <p>These gluten free chocolate chip cookies are crispy on the outside, chewy on the inside, buttery and perfectly sweet. These gluten free cookies are easy to make and don’t require chilling! They are the best and no one can even tell they’re gluten-free!</p>
             </li>
             <!-- Add more recipes as needed -->
         </ul>
     </main>
     <aside>
-        <!-- Favorites -->
-        <div class="favorites">
-            <h3>Favorites</h3>
-            <ul>
-                <!-- List of favorite items (can be dynamically generated) -->
-                <li><a href="#">Favorite Recipe 1</a> <button class="remove-favorite">Remove</button></li>
-                <li><a href="#">Favorite Recipe 2</a> <button class="remove-favorite">Remove</button></li>
-            </ul>
-        </div>
-
-        <!-- What is Popular -->
-        <div class="popular-content">
-            <h3>Most Popular Recipes</h3>
-            <ol>
-                <li>
-                    <h4>Recipe 1</h4>
-                    <p>This is the description of Recipe 1.</p>
-                    <p>Popularity: <span class="popularity">5</span></p>
-                </li>
-                <li>
-                    <h4>Recipe 2</h4>
-                    <p>This is the description of Recipe 2.</p>
-                    <p>Popularity: <span class="popularity">4</span></p>
-                </li>
-                <!-- Add more popular recipes as needed -->
-            </ol>
-        </div>
-
-
         <!-- Real-Time Updates (WebSockets) -->
         <div class="real-time-updates">
             <h3>Real-Time Updates</h3>
@@ -106,7 +52,6 @@
                 <label for="recipe-name">Recipe Name:</label>
                 <input type="text" id="recipe-name" name="recipe-name" required>
                 <br>
-                <!-- Recipe Image Upload -->
                 <label for="recipe-image">Recipe Image:</label>
                 <input type="file" id="recipe-image" name="recipe-image" accept="image/*" required>
                 <br>
@@ -125,4 +70,3 @@
     </footer>
 </body>
 </html>
-
