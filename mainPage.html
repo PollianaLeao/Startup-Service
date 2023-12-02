@@ -32,6 +32,11 @@
                 <p>These gluten free chocolate chip cookies are crispy on the outside, chewy on the inside, buttery and perfectly sweet. These gluten free cookies are easy to make and don’t require chilling! They are the best and no one can even tell they’re gluten-free!</p>
             </li>
             <!-- Add more recipes as needed -->
+           <li>
+            <h3 id="title-name"></h3>
+            <p id="description"></p>
+            <p id="instructions"></p>
+           </li>
         </ul>
     </main>
     <aside>
@@ -48,7 +53,7 @@
         <!-- Share Your Secret (Upload Recipes) -->
         <div class="share-your-secret">
             <h3>Share Your Secret</h3>
-            <form action="upload_recipe.php" method="post" enctype="multipart/form-data">
+            <form id="recipe-form">
                 <label for="recipe-name">Recipe Name:</label>
                 <input type="text" id="recipe-name" name="recipe-name" required>
                 <br>

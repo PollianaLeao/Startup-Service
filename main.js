@@ -39,6 +39,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
             instructions: recipeInstructions,
         };
 
+
+        const titleRecipe = document.getElementById("title-name");
+        titleRecipe.textContent = recipeName;
+
+        const descriptionRecipe = document.getElementById("description");
+        descriptionRecipe.textContent = recipeDescription;
+
+        const instructionsRecipe = document.getElementById("instructions");
+        instructionsRecipe.textContent = recipeInstructions;
+
+
         const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
         recipes.push(recipe);
         localStorage.setItem("recipes", JSON.stringify(recipes));
