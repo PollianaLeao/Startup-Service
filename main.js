@@ -79,3 +79,28 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 });
+function fetchRandomRecipe() {
+    fetch('https://startup.pollybypolly.click/mainPage.html') // Replace with the actual API URL
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(recipe => {
+            // Process and display the recipe
+            displayRecipe(recipe);
+        })
+        .catch(error => {
+            console.error('Error fetching recipe:', error);
+            // Optionally update the UI to indicate that the fetch failed
+        });
+}
+
+function displayRecipe(recipe) {
+    // Assuming you have HTML elements to display recipe data
+    const recipeTitleElement = document.getElementById('recipe-title');
+    const recipeContentElement = document.getElementById('recipe-content');
+
+    recipeTitleElement.textContent = recipe.title; // Example: Update title
+    recipeContentElement.textContent = recipe.description; };

@@ -11,11 +11,31 @@ app.post('/cookie/:name/:value', (req, res, next) => {
   res.cookie(req.params.name, req.params.value);
   res.send({ cookie: `${req.params.name}:${req.params.value}` });
 });
+app.post('/login', (req, res) => {
+  const { username, password } = req.body;
+  // Replace the below with your authentication logic
+  if (username === 'validUser' && password === 'validPassword') {
+      // Authentication successful
+      res.status(200).json({ message: "Login Successful" });
+  } else {
+      // Authentication failed
+      res.status(401).json({ message: "Login Failed" });
+  }
+});
 
 // Logging middleware
 app.use((req, res, next) => {
   console.log(req.originalUrl);
   next();
+});
+
+app.post('/submit-recipe', (req, res) => {
+  // Add logic to process the recipe submission
+  // This could involve parsing form data, saving to a database, etc.
+  console.log(req.body); // Log the recipe data for now
+
+  // Respond with success
+  res.status(201).json({ message: "Recipe submitted successfully" });
 });
 
 // Static file serving middleware (serves files from the 'public' directory)
