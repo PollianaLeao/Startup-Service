@@ -113,6 +113,10 @@ Includes WebSocket-related code.
 Includes implement review stars for content items. 
 Include a feature for users to submit gluten-free recipes. 
 
+*I excluded some features like favorite and and review stars. Changed the code to be in local storage only for now.
+
+
+
 ```
 ### Service (Backend): 
 
