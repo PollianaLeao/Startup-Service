@@ -1,0 +1,21 @@
+{
+  "name": "startup-service",
+  "version": "1.0.0",
+  "description": "npm install cookie-parser",
+  "main": "nodemon index.jss",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Startup-Service"
+  },
+  "keywords": [
+    "SHA256:zIYySF6qBsVQ4TWDxZ3jtNJ6vBOq7YhuCaYGhSz1IeE"
+  ],
+  "author": "MacBook Pro",
+  "license": "Unlicense",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
