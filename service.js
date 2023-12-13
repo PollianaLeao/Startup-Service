@@ -2,6 +2,7 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const app = express();
 
+
 // Third-party middleware - Cookies
 app.use(cookieParser());
 
@@ -44,8 +45,8 @@ app.use((err, req, res, next) => {
   res.status(500).send({ type: err.name, message: err.message });
 });
 
-// Start the server and listen on port 8080
-const port = 8080;
+// Start the server and listen on port 
+const port = 4000;
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
