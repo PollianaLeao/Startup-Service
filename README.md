@@ -154,6 +154,8 @@ Serving Frontend: The Express application is configured to serve static files fr
 - Utilize a database system like MongoDB to store user data, gluten-free content (recipes, articles, product recommendations), user preferences, and user-submitted recipes.
 
 
+
+
 ### WebSocket:
 
 - Set up WebSocket communication to enable real-time updates for changes in user favorites, content ratings, and new recipe submissions.

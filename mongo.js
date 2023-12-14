@@ -5,6 +5,17 @@ const jwt = require('jsonwebtoken');
 const app = express();
 const port = 4000;
 
+// User Model
+  
+  // Recipe Model
+  const recipeSchema = new Schema({
+    title: String,
+    ingredients: [String],
+    instructions: String,
+    submittedBy: String
+  });
+  const Recipe = mongoose.model('Recipe', recipeSchema);
+  
 // Replace 'your-database-url' with your actual MongoDB database URL.
 mongoose.connect('mongodb+srv://polliana332:<password>@cluster0.xtm2ujw.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
 
