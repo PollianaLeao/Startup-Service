@@ -17,5 +17,8 @@
   "license": "Unlicense",
   "devDependencies": {
     "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "mongodb": "^6.3.0"
   }
 }
