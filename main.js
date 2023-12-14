@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 function fetchRandomRecipe() {
-    fetch('https://api.example.com/random-recipe') // Replace with actual API URL
+    fetch('https://54.204.224.87/') // Replace with actual API URL
         .then(response => response.json())
         .then(data => {
             // Process the data
