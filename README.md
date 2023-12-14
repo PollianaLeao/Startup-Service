@@ -153,6 +153,11 @@ Serving Frontend: The Express application is configured to serve static files fr
 
 - Utilize a database system like MongoDB to store user data, gluten-free content (recipes, articles, product recommendations), user preferences, and user-submitted recipes.
 
+```
+The file shows a connection being made to a MongoDB Atlas database. 
+User Registration Endpoint (/register): Allows new users to register by storing their credentials in MongoDB.
+User Login Endpoint (/login): Authenticates users against the MongoDB database and provides a JWT token upon successful authentication.
+User data is stored in MongoDB as evidenced by the User model and the /register endpoint.  A Recipe model is defined to store recipes.
 
 
 
