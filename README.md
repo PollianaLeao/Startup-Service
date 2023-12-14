@@ -127,7 +127,27 @@ Include a feature for users to submit gluten-free recipes.
    - Managing users' favorite content items and updating the database accordingly.
    - Real-time updates through WebSocket for changes in favorites, content ratings, and new recipe submissions.
    - Handling recipe submissions, including validation and storage in the database.
+```
+Service Setup: Set up a backend service using Node.js and Express. This is evident from the use of require('express') and the creation of an Express application (const app = express()).
+Middleware Integration: Integrates middleware for cookie parsing (cookieParser) and static file serving (express.static('public')), enhancing its functionality.
 
+User Authentication:
+
+Endpoint: Implemented a /login POST route (app.post('/login', ...)) for user authentication.
+Functionality: This route takes a username and password from the request body and performs a simple check to validate these credentials. While this is a basic implementation, it serves as a placeholder for more complex logic, like checking against a database.
+Response Handling: The route responds with a success or failure message based on the provided credentials.
+
+Handling Recipe Submissions:
+
+Endpoint: A /submit-recipe POST route (app.post('/submit-recipe', ...)) is set up to handle recipe submissions.
+Basic Logic: The current implementation logs the received data to the console. This can be extended to include validation and storage in a database.
+Response: The endpoint responds with a success message upon receiving a submission.
+
+Static File Serving
+
+Serving Frontend: The Express application is configured to serve static files from the public directory, allowing your frontend assets (HTML, CSS, JavaScript) to be accessible via the Express server.
+
+```
 
 ### Database (DB):
 
