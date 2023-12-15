@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
             // Assuming the data is an array of content objects with 'category' property
     
             const categories = {};
-            
+
     // Check if the user is already authenticated
     const authenticatedUser = localStorage.getItem("authenticatedUser");
     if (authenticatedUser) {
         usernameDisplay.textContent = `Welcome, ${authenticatedUser}`;
-    }
+    }})
 
     // Event listener for login form submission
     if (loginForm) {
@@ -97,4 +97,5 @@ function handleRecipeSubmission(event) {
         console.error("Error submitting recipe:", error);
         alert("Recipe submission failed. Please try again.");
     });
+
 }
