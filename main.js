@@ -2,7 +2,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const loginForm = document.getElementById("login-form");
     const usernameDisplay = document.getElementById("username-display");
     const loginErrorMessage = document.getElementById("login-error-message");
+    const contentContainer = document.getElementById("content-container");
 
+    //'your-api-endpoint' with the actual endpoint on your server
+    const apiUrl = 'https://startup.pollybypolly.click';
+    
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            // Data received from the server
+            // Assuming the data is an array of content objects with 'category' property
+    
+            const categories = {};
+            
     // Check if the user is already authenticated
     const authenticatedUser = localStorage.getItem("authenticatedUser");
     if (authenticatedUser) {
