@@ -158,13 +158,18 @@ The file shows a connection being made to a MongoDB Atlas database.
 User Registration Endpoint (/register): Allows new users to register by storing their credentials in MongoDB.
 User Login Endpoint (/login): Authenticates users against the MongoDB database and provides a JWT token upon successful authentication.
 User data is stored in MongoDB as evidenced by the User model and the /register endpoint.  A Recipe model is defined to store recipes.
-
+```
 
 
 ### WebSocket:
 
 - Set up WebSocket communication to enable real-time updates for changes in user favorites, content ratings, and new recipe submissions.
 
+```
+Backend: WebSocket server in the backend to listen for connections and broadcast messages to connected clients.
+Frontend: WebSocket server from the frontend, send messages (like new recipe submissions), and update the UI based on received data.
+
+```
 
 ### REACT (front-end framework):
 
