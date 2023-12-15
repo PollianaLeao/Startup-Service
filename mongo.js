@@ -61,3 +61,24 @@ app.post('/login', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+const socket = new WebSocket('ws://your-server-url');
+
+ socket.addEventListener('open', (event) => {
+    console.log('WebSocket connection opened');
+ });
+
+ socket.addEventListener('message', (event) => {
+     const data = JSON.parse(event.data);
+    // Handle incoming real-time updates (e.g., add new recipes or comments)
+     // dynamically update the content based on the received data
+ });
+
+ socket.addEventListener('close', (event) => {
+     console.log('WebSocket connection closed');
+ });
+ // In your server code
+ socket.on('newRecipe', (data) => {
+     // Send the new recipe data to all connected clients
+     socket.emit('newRecipe', data);
+ });
