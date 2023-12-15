@@ -179,7 +179,14 @@ Frontend: WebSocket server from the frontend, send messages (like new recipe sub
 
 - Implement hooks and state management to handle user interactions, favorites, content ratings, and recipe posting effectively.
 
+```
+Look for usage of BrowserRouter, Routes, Route, and NavLink (or similar) from the react-router-dom package. This indicates that React Router is used for navigating between different components or pages in the app.
 
+React hooks (like useState, useEffect, useContext, etc.) for managing state, handling user interactions, managing favorites, content ratings, and recipe posting.
+
+project has separate components for login, content display, user profiles, recipe posting, and a gluten-free guide.
+
+```
 
 ## Design: 🎨
 
