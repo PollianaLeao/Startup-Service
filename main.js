@@ -99,3 +99,23 @@ function handleRecipeSubmission(event) {
     });
 
 }
+
+const socket = new WebSocket('ws://l54.204.224.87');
+
+socket.addEventListener('open', function (event) {
+  console.log('Connected to WS Server');
+});
+
+socket.addEventListener('message', function (event) {
+  console.log('Message from server ', event.data);
+  // Update your frontend based on the received message
+});
+
+function sendMessage(message) {
+    if (socket.readyState === WebSocket.OPEN) {
+      socket.send(message);
+    } else {
+      console.log('WebSocket is not open.');
+    }
+  }
+  
